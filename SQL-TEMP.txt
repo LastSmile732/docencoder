@@ -8,7 +8,6 @@ CONNECT BY PRIOR d.parent_dept=d.id
 start with d.id = (select u.staff_dept_id from users u where u.id='14705')
 order siblings by d.parent_dept;
 
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
