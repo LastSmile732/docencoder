@@ -13,6 +13,6 @@ public class JobA implements Job{
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println("Job A is runing");
+		System.out.println("Job A is running");
 	}
 }

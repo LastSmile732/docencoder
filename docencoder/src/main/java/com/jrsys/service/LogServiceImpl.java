@@ -13,7 +13,7 @@ import com.jrsys.model.Logs;
 @Service
 public class LogServiceImpl implements LogService {
 
-	@Resource
+	//@Resource
 	private LogRepository logRepository;
 	
 	@Override

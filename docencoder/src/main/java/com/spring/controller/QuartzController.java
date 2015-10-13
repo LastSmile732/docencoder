@@ -24,8 +24,8 @@ import com.quartz.QuartzService;
 @Controller
 public class QuartzController {
 	
-	@Autowired
-	private LogService logService;
+	//@Autowired
+	//private LogService logService;
 	
 /*	private static final Logger logger = LoggerFactory
             .getLogger(MainController.class);*/

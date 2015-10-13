@@ -9,6 +9,6 @@ public class JobB implements Job{
 	public void execute(JobExecutionContext context)
 		throws JobExecutionException {
 		
-		System.out.println("Job B is runing");
+		System.out.println("Job B is running");
 	}
 }
