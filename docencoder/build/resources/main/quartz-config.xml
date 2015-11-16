@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quartz xmlns="http://www.w3.org/2001/XMLSchema-instance" version="1.1">
+	<!--<job>
+		<job-detail>
+			<name>FirstJob</name>
+			<group>FirstJob</group>
+			<job-class>com.quartz.QuartzJob</job-class>
+			<volatility>false</volatility>
+			<durability>false</durability>
+			<recover>false</recover>
+			<job-data-map allows-transient-data="false">
+			</job-data-map>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>QTrigger</name>
+				<group>FirstTrigger</group>
+				<job-name>JobQ</job-name>
+				<job-group>default</job-group>
+				<cron-expression>0/10 * * * * ?</cron-expression>
+			</cron>
+		</trigger>
+	</job>-->
+	<job>
+		<job-detail>
+			<name>JobA</name>
+			<group>FTP</group>
+			<job-class>com.quartz.JobA</job-class>
+			<volatility>false</volatility>
+			<durability>false</durability>
+			<recover>false</recover>
+			<job-data-map allows-transient-data="false">
+			</job-data-map>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>TriggerNameA</name>
+				<group>default</group>
+				<job-name>JobA</job-name>
+				<job-group>FTP</job-group>
+				<cron-expression>0/10 * * * * ?</cron-expression>
+			</cron>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>JobB</name>
+			<group>FTP</group>
+			<job-class>com.quartz.JobB</job-class>
+			<volatility>false</volatility>
+			<durability>false</durability>
+			<recover>false</recover>
+			<job-data-map allows-transient-data="false">
+			</job-data-map>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>TriggerNameB</name>
+				<group>default</group>
+				<job-name>JobB</job-name>
+				<job-group>FTP</job-group>
+				<cron-expression>0/2 * * * * ? 2016</cron-expression>
+			</cron>
+		</trigger>
+	</job>
+	<!--<schedule>
+		<job>
+			<name>JobA</name>
+			<group>JobGroup</group>
+			<description>This is Job A</description>
+			<job-class>com.quartz.JobA</job-class>
+		</job>
+		<trigger>
+			<cron>
+				<name>TriggerNameA</name>
+				<group>default</group>
+				<job-name>JobA</job-name>
+				<job-group>JobGroup</job-group>
+				<cron-expression>0/5 * * * * ?</cron-expression>
+			</cron>
+		</trigger>
+	</schedule>
+	<schedule>
+		<job>
+			<name>JobB</name>
+			<group>JobGroup</group>
+			<description>This is Job B</description>
+			<job-class>com.quartz.JobB</job-class>
+		</job>
+		<trigger>
+			<cron>
+				<name>TriggerNameB</name>
+				<group>default</group>
+				<job-name>JobB</job-name>
+				<job-group>JobGroup</job-group>
+				<cron-expression>0/5 * * * * ?</cron-expression>
+			</cron>
+		</trigger>
+	</schedule>-->
+</quartz>
