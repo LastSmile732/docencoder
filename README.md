@@ -1,4 +1,4 @@
 # docencoder
-Side Project: PDF Encryptor &amp; Quartz Scheduler
+2 Side Projects: PDF Encryptor &amp; Quartz Scheduler
 
-Simple PDF Encryptor using iText and Bouncy Castle
+using iText, Bouncy Castle and Quarts
